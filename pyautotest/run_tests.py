@@ -43,7 +43,7 @@ def run(m):
                      "--self-contained-html",
                      "--maxfail", RunConfig.max_fail,
                      "--reruns", RunConfig.rerun])
-        logger.info("运行结束，生成测试报告♥❤！")
+        logger.info("运行结束，生成测试报告！")
     elif m == "debug":
         print("debug模式，开始执行！")
         pytest.main(["-v", "-s", RunConfig.cases_path])
